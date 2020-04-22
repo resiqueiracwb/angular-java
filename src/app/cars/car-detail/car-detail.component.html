@@ -1,0 +1,13 @@
+<h2>Cars</h2>
+<div *ngIf="car$ | async as car">
+  <h3>"{{ car.name }}"</h3>
+  <div>
+    <label>Id: </label>{{ car.id }}</div>
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="car.name" placeholder="name"/>
+  </div>
+  <p>
+    <button (click)="gotoCars(car)">Back</button>
+  </p>
+</div>

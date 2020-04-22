@@ -1,0 +1,9 @@
+<h1 class="title">Welcome to Renato Siqueira Portfolio</h1>
+
+<nav>
+    <a routerLink="/routing-home" routerLinkActive="active">Angular Routing</a>
+</nav>
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
+    <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>
+<router-outlet name="popup"></router-outlet>

@@ -1,0 +1,12 @@
+<!-- <p>car-list works!</p> -->
+<h2>Cars</h2>
+<ul class="cars">
+    <li *ngFor= "let car of cars$ | async"
+        [class.selected] = "car.id === selectedId">
+        <a [routerLink]="['/car', car.id]">
+            <span class="badge">{{ car.id }}</span>{{ car.name }}
+        </a>    
+    </li>
+</ul>
+
+<!-- <button routerLink= "/sidekicks"> Go to sidekicks</button> -->

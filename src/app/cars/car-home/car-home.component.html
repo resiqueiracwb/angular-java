@@ -1,0 +1,10 @@
+<p>Explanation  aboult Angular routes</p>
+
+<nav>
+    <a routerLink="/cars" routerLinkActive="active">List Cars</a>
+</nav>
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
+    <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>
+<router-outlet name="popup"></router-outlet>
+
